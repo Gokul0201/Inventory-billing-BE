@@ -120,8 +120,9 @@ router.post('/login', async(req, res)=> {
         res.send({
           statusCode: 200,
           message:"User Logged in Successfully",
-          token
-         
+          token,
+          username:user.username
+                   
         })
       }
       else
